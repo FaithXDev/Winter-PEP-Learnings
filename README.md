@@ -51,6 +51,12 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Two Sum II - Input Array Is Sorted](Two_Sum2.java)
 - [Valid Anagram](Valid_anagram.java)
 - [Word Search](Word_Search.java)
+- [Selection Sort](Selection_Sort.java)
+- [Bubble Sort](Bubble_Sort.java)
+- [Insertion Sort](Insertion_Sort.java)
+- [Quick Sort](Quick_Sort.java)
+- [Merge Sort](Merge_Sort.java)
+- [Majority Element](Majority_Element.java)
 
 ## 📝 Contributions
 
