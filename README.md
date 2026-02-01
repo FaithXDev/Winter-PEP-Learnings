@@ -61,6 +61,9 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Count Inversion](count_inversion.java)
 - [Capacity To Ship Packages Within D Days](capacity_to_ship_packages_within_d_day.java)
 - [Merge Sort](Sort_an_array.java)
+- [Minimum Number of Days to Make M Bouquets](Minimum_Number_of_Days_to_Make_M_Bouquets.java)
+- [Sort Colors](Sort_colors.java)
+
 
 
 ## 📝 Contributions
