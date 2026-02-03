@@ -65,6 +65,7 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Sort Colors](Sort_colors.java)
 - [Asteroid Collision](asteroid_collision.java)
 - [Implement Stack using Queues](Implement_stack_using_queue.java)
+- [Daily Temperatures](Daily_Temperatures.java) 
 
 
 
