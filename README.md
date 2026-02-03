@@ -63,6 +63,8 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Merge Sort](Sort_an_array.java)
 - [Minimum Number of Days to Make M Bouquets](Minimum_Number_of_Days_to_Make_M_Bouquets.java)
 - [Sort Colors](Sort_colors.java)
+- [Asteroid Collision](asteroid_collision.java)
+- [Implement Stack using Queues](Implement_stack_using_queue.java)
 
 
 
