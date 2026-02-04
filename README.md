@@ -66,6 +66,8 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Asteroid Collision](asteroid_collision.java)
 - [Implement Stack using Queues](Implement_stack_using_queue.java)
 - [Daily Temperatures](Daily_Temperatures.java) 
+- [Minimum Size Subarray Sum](Minimum_Size_Subarray_Sum.java)        
+- [Delete Node in a Linked List](Delete_node_in_linked_list.java)
 
 
 
