@@ -69,6 +69,8 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Minimum Size Subarray Sum](Minimum_Size_Subarray_Sum.java)        
 - [Delete Node in a Linked List](Delete_node_in_linked_list.java)
 - [Remove Nth Node From End of List](Remove_Nth_Node_From_End_of_List.java)   
+- [Palindrome Linked List](Palindrome_Linked_List.java)
+- [Reorder List](Reorder_List.java)
 
 
 
