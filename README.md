@@ -71,8 +71,10 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Remove Nth Node From End of List](Remove_Nth_Node_From_End_of_List.java)   
 - [Palindrome Linked List](Palindrome_Linked_List.java)
 - [Reorder List](Reorder_List.java)
-
-
+- [Diameter of Binary Tree](Diameter_of_Binary_Tree.java)
+- [Maximum Depth of Binary Tree](Maximum_Depth_of_Binary_Tree.java)
+- [Minimum Depth of Binary Tree](Minimum_Depth_of_Binary_Tree.java)
+- [Invert Binary Tree](Invert_Binary_Tree.java)
 
 ## 📝 Contributions
 
