@@ -1,18 +1,4 @@
 public class capacity_to_ship_packages_within_d_day {
-    /**
-     * Finds the minimum capacity of the ship to ship all packages within 'days'
-     * days.
-     * Problem: LeetCode 1011. Capacity To Ship Packages Within D Days.
-     * 
-     * Approach: Binary Search on Answer.
-     * The possible capacity ranges from max(weights) to sum(weights).
-     * We perform binary search in this range to find the minimum capacity that
-     * satisfies the condition.
-     * 
-     * @param weights Array of package weights
-     * @param days    Maximum number of days allowed
-     * @return The minimum capacity required
-     */
     public int shipWithinDays(int[] weights, int days) {
         int low = 0;
         int high = 0;

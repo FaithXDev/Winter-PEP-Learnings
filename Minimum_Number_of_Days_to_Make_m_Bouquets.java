@@ -1,15 +1,4 @@
 
-/**
- * Problem: Minimum Number of Days to Make m Bouquets
- * Description:
- * You are given an integer array bloomDay, an integer m and an integer k.
- * You want to make m bouquets. To make a bouquet, you need to use k adjacent
- * flowers from the garden.
- * Return the minimum number of days you need to wait to be able to make m
- * bouquets from the garden.
- * If it is impossible to make m bouquets return -1.
- */
-
 public class Minimum_Number_of_Days_to_Make_m_Bouquets {
 
     public int minDays(int[] bloomDay, int m, int k) {

@@ -1,17 +1,6 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-/**
- * Problem: Implement Stack using Queues
- * Description:
- * Implement a Last-In-First-Out (LIFO) stack using only two queues.
- * The stack should support the following operations:
- * - push(x): Push element x onto the stack.
- * - pop(): Removes the element on top of the stack and returns it.
- * - top(): Returns the element on top of the stack.
- * - empty(): Returns true if the stack is empty, false otherwise.
- */
-
 public class Implement_stack_using_queue {
 
     private Queue<Integer> q1;

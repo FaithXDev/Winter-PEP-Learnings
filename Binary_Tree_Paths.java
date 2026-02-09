@@ -1,36 +1,3 @@
-
-/**
- * LeetCode 257: Binary Tree Paths
- *
- * Problem Description: Given the root of a binary tree, return all root-to-leaf paths in any order.
- * A leaf is a node with no children.
- * 
- * Approach:
- * We use a Depth First Search (DFS) traversal to explore all paths from the root to the leaves.
- * 
- * 1. Maintain a `path` string that accumulates the node values as we traverse down.
- * 2. At each node, append the current node's value to the `path`.
- * 3. Base Case (Leaf Node): If the current node is a leaf (both left and right children are null), add the completed `path` to the result list.
- * 4. Recursive Step: If the node is not a leaf, append "->" to the path and recursively call the function for:
- *    - The left child
- *    - The right child
- * 
- * Since strings are immutable in Java, each recursive call gets a new copy of the path string, ensuring correct path construction without explicit backtracking.
- * Time Complexity: O(N) since we visit every node once. String concatenations can add overhead, making it effectively O(N^2) in worst case (skewed tree) depending on string length.
- *
- * Example 1:
- * Input: root = [1,2,3,null,5]
- * Output: ["1->2->5","1->3"]
- *
- * Example 2:
- * Input: root = [1]
- * Output: ["1"]
- * 
- * Constraints:
- * - The number of nodes in the tree is in the range [1, 100].
- * - -100 <= Node.val <= 100
-
- */
 import java.util.ArrayList;
 import java.util.List;
 
