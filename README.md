@@ -76,6 +76,9 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Minimum Depth of Binary Tree](Minimum_Depth_of_Binary_Tree.java)
 - [Invert Binary Tree](Invert_Binary_Tree.java)
 - [Binary Tree Postorder Traversal](Binary_Tree_Postorder_Traversal.java)
+- [Balanced Binary Tree](Balanced_binary_tree.java)   
+- [Same Tree](Same_Tree.java)
+- [Subtree of another Tree](Subtree_of_another_Tree.java)
 
 
 ## 📝 Contributions
