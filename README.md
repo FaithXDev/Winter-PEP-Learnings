@@ -53,14 +53,13 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Word Search](Word_Search.java)
 - [Selection Sort](Selection_Sort.java)
 - [Bubble Sort](Bubble_Sort.java)
-- [Insertion Sort](Insertion_Sort.java)
-- [Quick Sort](Quick_Sort.java)
-- [Merge Sort](Merge_Sort.java)
+- [Insertion Sort](insertion_sort.java)
+- [Quick Sort](quick_sort.java)
+- [Merge Sort](merge_sort.java)
 - [Majority Element](Majority_Element.java)
 - [Sort an Array](Sort_an_array.java)
 - [Count Inversion](count_inversion.java)
 - [Capacity To Ship Packages Within D Days](capacity_to_ship_packages_within_d_day.java)
-- [Merge Sort](Sort_an_array.java)
 - [Minimum Number of Days to Make M Bouquets](Minimum_Number_of_Days_to_Make_M_Bouquets.java)
 - [Sort Colors](Sort_colors.java)
 - [Asteroid Collision](asteroid_collision.java)
@@ -80,6 +79,7 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Same Tree](Same_tree.java)
 - [Subtree of another Tree](Subtree_of_another_Tree.java)
 - [Binary Tree Paths](Binary_Tree_Paths.java)
+- [Lowest Common Ancestor of a BST](Lowest_Common_Ancestor_of_a_Binary_Search_Tree.java)
 
 
 ## 📝 Contributions
