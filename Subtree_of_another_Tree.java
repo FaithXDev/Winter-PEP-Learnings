@@ -8,7 +8,7 @@
  * A subtree of a binary tree tree is a tree that consists of a node in tree and
  * all of this node's descendants.
  * The tree tree could also be considered as a subtree of itself.
- *
+ * 
  * Example 1:
  * Input: root = [3,4,5,1,2], subRoot = [4,1,2]
  * Output: true
@@ -21,6 +21,13 @@
  * - The number of nodes in the root tree is in the range [1, 2000].
  * - The number of nodes in the subRoot tree is in the range [1, 1000].
  * - -10^4 <= root.val, subRoot.val <= 10^4
+ * 
+ * 
+ * 
+ * The `isSameTree` helper function performs a recursive check for structural
+ * and value equality (same as LeetCode 100).
+ * Overall Time Complexity: O(M * N), where M is the number of nodes in `root`
+ * and N is the number of nodes in `subRoot`.
  */
 
 public class Subtree_of_another_Tree {
@@ -119,3 +126,40 @@ public class Subtree_of_another_Tree {
         System.out.println("Test Case 2: " + solution.isSubtree(root2, subRoot2)); // Expected: false
     }
 }
+
+/*
+ * Approach:
+ * 1. The problem asks if a binary tree `subRoot` is a subtree of another binary
+ * tree `root`.
+ * 2. A subtree of `root` consists of a node in `root` and all of its
+ * descendants.
+ *
+ * Algorithm:
+ * 1. Traverse the `root` tree. For each node in `root`, treat it as a potential
+ * root of a subtree that matches `subRoot`.
+ * 2. To check if the subtree rooted at the current node matches `subRoot`, we
+ * use a helper function `isSameTree` (similar to LeetCode 100).
+ * - `isSameTree(p, q)` checks if two trees rooted at `p` and `q` are identical
+ * in structure and node values.
+ * 3. Step-by-step logic for `isSubtree(root, subRoot)`:
+ * - Base Case 1: If `subRoot` is null, it is structurally a subtree of any tree
+ * (including an empty one). Return true.
+ * - Base Case 2: If `root` is null (and `subRoot` is not, covered by above),
+ * then `subRoot` cannot be a subtree. Return false.
+ * - Check current node: If `isSameTree(root, subRoot)` returns true, then we
+ * found a match. Return true.
+ * - Recursive Step: If the current node doesn't match, check recursively in the
+ * left child (`isSubtree(root.left, subRoot)`) OR the right child
+ * (`isSubtree(root.right, subRoot)`).
+ * 
+ * Complexity Analysis:
+ * - Time Complexity: O(M * N)
+ * - M is the number of nodes in the `root` tree.
+ * - N is the number of nodes in the `subRoot` tree.
+ * - In the worst case (e.g., both trees are skewed or identical structure but
+ * different leaf values), for each node in `root`, we might visit all nodes in
+ * `subRoot`.
+ * - Space Complexity: O(H_root)
+ * - H_root is the height of the `root` tree.
+ * - This space is used by the recursion stack for traversing `root`.
+ */

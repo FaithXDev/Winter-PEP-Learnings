@@ -6,6 +6,21 @@
  * not.
  * Two binary trees are considered the same if they are structurally identical,
  * and the nodes have the same value.
+ * 
+ * Approach:
+ * We use a recursive Depth First Search (DFS) to traverse both trees
+ * simultaneously.
+ * 
+ * 1. Base Case (Both Null): If both nodes (p and q) are null, they are
+ * structurally identical, so return true.
+ * 2. Mismatch Case: If only one of the nodes is null (structural mismatch) or
+ * if their values differ (value mismatch), return false.
+ * 3. Recursive Step: Recursively call the function for the left children of
+ * both nodes AND the right children of both nodes.
+ * - The result is true only if both the left and right subtrees are identical.
+ * 
+ * This processes every node in the smaller tree, resulting in O(min(N, M)) time
+ * complexity.
  *
  * Example 1:
  * Input: p = [1,2,3], q = [1,2,3]
@@ -22,6 +37,8 @@
  * Constraints:
  * - The number of nodes in both trees is in the range [0, 100].
  * - -10^4 <= Node.val <= 10^4
+ * 
+ * 
  */
 
 public class Same_tree {
@@ -112,3 +129,35 @@ public class Same_tree {
         System.out.println("Test Case 3: " + solution.isSameTree(p3, q3)); // Expected: false
     }
 }
+
+/*
+ * Approach:
+ * 1. The problem asks us to determine if two binary trees are identical (same
+ * structure and same values).
+ * 
+ * Algorithm:
+ * 1. We use a recursive Depth First Search (DFS) approach to traverse both
+ * trees simultaneously.
+ * 2. At each step, we compare the current nodes `p` and `q`.
+ * 3. Base Cases:
+ * - If both `p` and `q` are null, it means we reached the end of both trees at
+ * the same position, so they are structurally satisfying. Return true.
+ * - If one is null and the other is not, there is a structural mismatch. Return
+ * false.
+ * - If the values of `p` and `q` are different, there is a value mismatch.
+ * Return false.
+ * 4. Recursive Step:
+ * - If the current nodes are identical, recursively check if:
+ * - `p.left` is the same as `q.left`
+ * - AND
+ * - `p.right` is the same as `q.right`
+ * 
+ * Complexity Analysis:
+ * - Time Complexity: O(N)
+ * - We visit each node in the trees exactly once. N is the number of nodes in
+ * the smaller tree (since we stop at mismatch).
+ * - Space Complexity: O(H)
+ * - H is the height of the tree. This space is used by the recursion stack.
+ * - In the worst case (skewed tree), H = N. In the best case (balanced tree), H
+ * = log N.
+ */
