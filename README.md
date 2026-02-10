@@ -82,6 +82,8 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Lowest Common Ancestor of a BST](Lowest_Common_Ancestor_of_a_Binary_Search_Tree.java)
 - [Delete Node in a BST](delete_node_in_bst.java)
 - [Binary Tree Right Side View](Binary_Tree_Right_Side_View.java)
+- [binary tree left side view](binary_tree_left_side_view.java)
+- [Count Good Nodes in Binary Tree](Count_Good_in_Binary_Tree.java)
 
 
 ## 📝 Contributions
