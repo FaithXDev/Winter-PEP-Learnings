@@ -80,6 +80,8 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Subtree of another Tree](Subtree_of_another_Tree.java)
 - [Binary Tree Paths](Binary_Tree_Paths.java)
 - [Lowest Common Ancestor of a BST](Lowest_Common_Ancestor_of_a_Binary_Search_Tree.java)
+- [Delete Node in a BST](delete_node_in_bst.java)
+- [Binary Tree Right Side View](Binary_Tree_Right_Side_View.java)
 
 
 ## 📝 Contributions
