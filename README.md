@@ -85,6 +85,9 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [binary tree left side view](binary_tree_left_side_view.java)
 - [Count Good Nodes in Binary Tree](Count_Good_in_Binary_Tree.java)
 - [Validate Binary Search Tree](Validate_Binary_Search_Tree.java)
+- [Implement Trie](Implement_trie.java)
+- [Count Distinct Substrings](Count_distinct_substring.java)
+
 
 
 ## 📝 Contributions
