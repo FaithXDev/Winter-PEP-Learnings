@@ -86,7 +86,12 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Count Good Nodes in Binary Tree](Count_Good_in_Binary_Tree.java)
 - [Validate Binary Search Tree](Validate_Binary_Search_Tree.java)
 - [Implement Trie](Implement_trie.java)
+- [Implement Trie II](Implement_trie_II.java)
 - [Count Distinct Substrings](Count_distinct_substring.java)
+- [Kth Largest Element in an Array](Kth_Largest_Element_in_an_Array.java)
+- [Kth Largest Element in a Stream](Kth_Largest_Element_in_a_Stream.java)
+- [Find Median from Data Stream](Find_Median_from_Data_Stream.java)  
+
 
 
 
