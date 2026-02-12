@@ -91,6 +91,9 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Kth Largest Element in an Array](Kth_Largest_Element_in_an_Array.java)
 - [Kth Largest Element in a Stream](Kth_Largest_Element_in_a_Stream.java)
 - [Find Median from Data Stream](Find_Median_from_Data_Stream.java)  
+- [Last Stone Weight](Last_Stone_Weight.java)
+- [K Closest Points to Origin](K_Closest_Points_to_Origin.java)
+- []
 
 
 
