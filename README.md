@@ -93,7 +93,9 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Find Median from Data Stream](Find_Median_from_Data_Stream.java)  
 - [Last Stone Weight](Last_Stone_Weight.java)
 - [K Closest Points to Origin](K_Closest_Points_to_Origin.java)
-- []
+- [Task Scheduler](Task_Scheduler.java)
+- [Single-Threaded CPU](Single_Threaded_CPU.java)
+
 
 
 
