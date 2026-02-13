@@ -95,6 +95,9 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [K Closest Points to Origin](K_Closest_Points_to_Origin.java)
 - [Task Scheduler](Task_Scheduler.java)
 - [Single-Threaded CPU](Single_Threaded_CPU.java)
+- [Reverse Nodes in k Group](Reverse_Nodes_in_k_Group.java)
+- [Merge k Sorted Lists](Merge_k_Sorted_Lists.java)
+   
 
 
 
