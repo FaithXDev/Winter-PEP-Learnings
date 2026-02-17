@@ -97,8 +97,9 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Single-Threaded CPU](Single_Threaded_CPU.java)
 - [Reverse Nodes in k Group](Reverse_Nodes_in_k_Group.java)
 - [Merge k Sorted Lists](Merge_k_Sorted_Lists.java)
-   
-
+- [Candy](Candy.java)
+- [Maximize Sum Of Array After K Negations](Maximize_Sum_Of_Array_After_K_Negations.java)
+- []
 
 
 
