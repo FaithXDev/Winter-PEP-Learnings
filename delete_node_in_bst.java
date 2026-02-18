@@ -82,49 +82,6 @@ public class delete_node_in_bst {
         }
     }
 
-    public static void main(String[] args) {
-        delete_node_in_bst solution = new delete_node_in_bst();
-
-        // Construct the BST for testing:
-        // root = [5,3,6,2,4,null,7]
-        TreeNode root = new TreeNode(5);
-        root.left = new TreeNode(3);
-        root.right = new TreeNode(6);
-        root.left.left = new TreeNode(2);
-        root.left.right = new TreeNode(4);
-        root.right.right = new TreeNode(7);
-
-        System.out.println("Original BST (Inorder):");
-        printInorder(root);
-        System.out.println();
-
-        // Test Case 1: Delete key 3 (Node with two children)
-        int key1 = 3;
-        System.out.println("\nDeleting node with key " + key1 + "...");
-        root = solution.deleteNode(root, key1);
-        System.out.print("Modified BST (Inorder): ");
-        printInorder(root);
-        System.out.println();
-        // Expected Inorder after deleting 3: 2 4 5 6 7
-
-        // Test Case 2: Delete key 5 (Root node)
-        int key2 = 5;
-        System.out.println("\nDeleting node with key " + key2 + "...");
-        root = solution.deleteNode(root, key2);
-        System.out.print("Modified BST (Inorder): ");
-        printInorder(root);
-        System.out.println();
-
-        // Test Case 3: Delete key 7 (Leaf node)
-        int key3 = 7;
-        System.out.println("\nDeleting node with key " + key3 + "...");
-        root = solution.deleteNode(root, key3);
-        System.out.print("Modified BST (Inorder): ");
-        printInorder(root);
-        System.out.println();
-
-        System.out.println("\n✅ All test cases completed!");
-    }
 }
 
 /*

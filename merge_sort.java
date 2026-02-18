@@ -34,53 +34,7 @@ public class merge_sort {
         }
     }
 
-    public static void printArray(int[] arr) {
-        for (int value : arr) {
-            System.out.print(value + " ");
-        }
-        System.out.println();
-    }
 
-    public static void main(String[] args) {
-        // Test Case 1: Standard merge
-        int[] nums1_1 = { 1, 2, 3, 0, 0, 0 };
-        int m1 = 3;
-        int[] nums2_1 = { 2, 5, 6 };
-        int n1 = 3;
-
-        System.out.println("Test Case 1:");
-        System.out.print("nums1 before merge: ");
-        printArray(nums1_1);
-        System.out.print("nums2: ");
-        printArray(nums2_1);
-
-        merge(nums1_1, m1, nums2_1, n1);
-
-        System.out.print("nums1 after merge: ");
-        printArray(nums1_1);
-        System.out.println();
-
-        // Test Case 2: nums2 is empty
-        int[] nums1_2 = { 1 };
-        int m2 = 1;
-        int[] nums2_2 = {};
-        int n2 = 0;
-
-        System.out.println("Test Case 2 (nums2 empty):");
-        merge(nums1_2, m2, nums2_2, n2);
-        printArray(nums1_2);
-        System.out.println();
-
-        // Test Case 3: nums1 is empty (but has space)
-        int[] nums1_3 = { 0 };
-        int m3 = 0;
-        int[] nums2_3 = { 1 };
-        int n3 = 1;
-
-        System.out.println("Test Case 3 (nums1 empty):");
-        merge(nums1_3, m3, nums2_3, n3);
-        printArray(nums1_3);
-    }
 }
 
 /*

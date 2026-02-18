@@ -35,21 +35,6 @@ public class Longest_Substring_Without_Reapting_Char {
         return maxLength;
     }
 
-    public static void main(String[] args) {
-        Longest_Substring_Without_Reapting_Char solution = new Longest_Substring_Without_Reapting_Char();
-
-        String s1 = "abcabcbb";
-        System.out.println("Input: " + s1);
-        System.out.println("Output: " + solution.lengthOfLongestSubstring(s1) + " (Expected: 3)");
-
-        String s2 = "bbbbb";
-        System.out.println("Input: " + s2);
-        System.out.println("Output: " + solution.lengthOfLongestSubstring(s2) + " (Expected: 1)");
-
-        String s3 = "pwwkew";
-        System.out.println("Input: " + s3);
-        System.out.println("Output: " + solution.lengthOfLongestSubstring(s3) + " (Expected: 3)");
-    }
 }
 
 /*

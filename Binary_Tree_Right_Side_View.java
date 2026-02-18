@@ -51,54 +51,6 @@ public class Binary_Tree_Right_Side_View {
         rightView(curr.left, result, currDepth + 1);
     }
 
-    public static void main(String[] args) {
-        Binary_Tree_Right_Side_View solution = new Binary_Tree_Right_Side_View();
-
-        // Construct the tree for testing:
-        // root = [1,2,3,null,5,null,4]
-        // 1
-        // / \
-        // 2 3
-        // \ \
-        // 5 4
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(3);
-        root.left.right = new TreeNode(5);
-        root.right.right = new TreeNode(4);
-
-        System.out.println("Test Case 1:");
-        System.out.println("Input: root = [1,2,3,null,5,null,4]");
-        List<Integer> result = solution.rightSideView(root);
-        System.out.println("Output: " + result);
-        System.out.println("Expected: [1, 3, 4]");
-        System.out.println();
-
-        // Test Case 2: [1,null,3]
-        // 1
-        // \
-        // 3
-        TreeNode root2 = new TreeNode(1);
-        root2.right = new TreeNode(3);
-
-        System.out.println("Test Case 2:");
-        System.out.println("Input: root = [1,null,3]");
-        List<Integer> result2 = solution.rightSideView(root2);
-        System.out.println("Output: " + result2);
-        System.out.println("Expected: [1, 3]");
-        System.out.println();
-
-        // Test Case 3: []
-        TreeNode root3 = null;
-        System.out.println("Test Case 3:");
-        System.out.println("Input: root = []");
-        List<Integer> result3 = solution.rightSideView(root3);
-        System.out.println("Output: " + result3);
-        System.out.println("Expected: []");
-        System.out.println();
-
-        System.out.println("✅ All test cases completed!");
-    }
 }
 
 /*

@@ -84,59 +84,7 @@ public class Sort_an_array {
         }
     }
 
-    public static void printArray(int[] arr) {
-        System.out.print("[");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-            if (i < arr.length - 1)
-                System.out.print(", ");
-        }
-        System.out.println("]");
-    }
 
-    public static void main(String[] args) {
-        Sort_an_array solution = new Sort_an_array();
-
-        // Test Case 1: Random unsorted array
-        int[] nums1 = { 5, 2, 3, 1 };
-        System.out.println("Test Case 1:");
-        System.out.print("Original: ");
-        printArray(nums1);
-        solution.sortArray(nums1);
-        System.out.print("Sorted:   ");
-        printArray(nums1);
-        System.out.println();
-
-        // Test Case 2: Array with duplicates
-        int[] nums2 = { 5, 1, 1, 2, 0, 0 };
-        System.out.println("Test Case 2:");
-        System.out.print("Original: ");
-        printArray(nums2);
-        solution.sortArray(nums2);
-        System.out.print("Sorted:   ");
-        printArray(nums2);
-        System.out.println();
-
-        // Test Case 3: Already sorted array
-        int[] nums3 = { 1, 2, 3, 4, 5 };
-        System.out.println("Test Case 3:");
-        System.out.print("Original: ");
-        printArray(nums3);
-        solution.sortArray(nums3);
-        System.out.print("Sorted:   ");
-        printArray(nums3);
-        System.out.println();
-
-        // Test Case 4: Reverse sorted array
-        int[] nums4 = { 9, 8, 7, 6, 5 };
-        System.out.println("Test Case 4:");
-        System.out.print("Original: ");
-        printArray(nums4);
-        solution.sortArray(nums4);
-        System.out.print("Sorted:   ");
-        printArray(nums4);
-        System.out.println();
-    }
 }
 
 /*

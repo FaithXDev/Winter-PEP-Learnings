@@ -54,24 +54,6 @@ public class Task_Scheduler {
         return time;
     }
 
-    public static void main(String[] args) {
-        Task_Scheduler solution = new Task_Scheduler();
-
-        // Test Case 1
-        char[] tasks1 = { 'A', 'A', 'A', 'B', 'B', 'B' };
-        int n1 = 2;
-        System.out.println("Least Interval for [A,A,A,B,B,B], n=2: " + solution.leastInterval(tasks1, n1));
-
-        // Test Case 2
-        char[] tasks2 = { 'A', 'A', 'A', 'B', 'B', 'B' };
-        int n2 = 0;
-        System.out.println("Least Interval for [A,A,A,B,B,B], n=0: " + solution.leastInterval(tasks2, n2));
-
-        // Test Case 3
-        char[] tasks3 = { 'A', 'A', 'A', 'A', 'A', 'A', 'B', 'C', 'D', 'E', 'F', 'G' };
-        int n3 = 2;
-        System.out.println("Least Interval for [A,A,A,A,A,A,B,C,D,E,F,G], n=2: " + solution.leastInterval(tasks3, n3));
-    }
 }
 /**
  * Approach:

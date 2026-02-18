@@ -52,40 +52,6 @@ public class Same_tree {
         return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 
-    public static void main(String[] args) {
-        Same_tree solution = new Same_tree();
-
-        // Test Case 1: p = [1,2,3], q = [1,2,3]
-        TreeNode p1 = new TreeNode(1);
-        p1.left = new TreeNode(2);
-        p1.right = new TreeNode(3);
-
-        TreeNode q1 = new TreeNode(1);
-        q1.left = new TreeNode(2);
-        q1.right = new TreeNode(3);
-
-        System.out.println("Test Case 1: " + solution.isSameTree(p1, q1)); // Expected: true
-
-        // Test Case 2: p = [1,2], q = [1,null,2]
-        TreeNode p2 = new TreeNode(1);
-        p2.left = new TreeNode(2);
-
-        TreeNode q2 = new TreeNode(1);
-        q2.right = new TreeNode(2);
-
-        System.out.println("Test Case 2: " + solution.isSameTree(p2, q2)); // Expected: false
-
-        // Test Case 3: p = [1,2,1], q = [1,1,2]
-        TreeNode p3 = new TreeNode(1);
-        p3.left = new TreeNode(2);
-        p3.right = new TreeNode(1);
-
-        TreeNode q3 = new TreeNode(1);
-        q3.left = new TreeNode(1);
-        q3.right = new TreeNode(2);
-
-        System.out.println("Test Case 3: " + solution.isSameTree(p3, q3)); // Expected: false
-    }
 }
 
 /*

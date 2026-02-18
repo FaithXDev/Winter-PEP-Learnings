@@ -38,43 +38,6 @@ public class Lowest_Common_Ancestor_of_a_Binary_Search_Tree {
         return null;
     }
 
-    public static void main(String[] args) {
-        Lowest_Common_Ancestor_of_a_Binary_Search_Tree solution = new Lowest_Common_Ancestor_of_a_Binary_Search_Tree();
-
-        // Construct the BST for testing:
-        // root = [6,2,8,0,4,7,9,null,null,3,5]
-        TreeNode root = new TreeNode(6);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(8);
-        root.left.left = new TreeNode(0);
-        root.left.right = new TreeNode(4);
-        root.right.left = new TreeNode(7);
-        root.right.right = new TreeNode(9);
-        root.left.right.left = new TreeNode(3);
-        root.left.right.right = new TreeNode(5);
-
-        // Test Case 1: p = 2, q = 8
-        TreeNode p1 = root.left; // 2
-        TreeNode q1 = root.right; // 8
-        TreeNode lca1 = solution.lowestCommonAncestor(root, p1, q1);
-        System.out.println("Test Case 1:");
-        System.out.println("Input: root = [6,2,8...], p = 2, q = 8");
-        System.out.println("LCA: " + (lca1 != null ? lca1.val : "null"));
-        System.out.println("Expected: 6");
-        System.out.println();
-
-        // Test Case 2: p = 2, q = 4
-        TreeNode p2 = root.left; // 2
-        TreeNode q2 = root.left.right; // 4
-        TreeNode lca2 = solution.lowestCommonAncestor(root, p2, q2);
-        System.out.println("Test Case 2:");
-        System.out.println("Input: root = [6,2,8...], p = 2, q = 4");
-        System.out.println("LCA: " + (lca2 != null ? lca2.val : "null"));
-        System.out.println("Expected: 2");
-        System.out.println();
-
-        System.out.println("✅ All test cases completed!");
-    }
 }
 
 /*

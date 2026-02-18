@@ -98,22 +98,6 @@ public class Implement_trie_II {
         node.deleteEnd();
     }
 
-    public static void main(String[] args) {
-        Implement_trie_II trie = new Implement_trie_II();
-
-        trie.insert("apple");
-        trie.insert("apple");
-        trie.insert("app");
-
-        System.out.println("Count words equal to 'apple': " + trie.countWordsEqualTo("apple")); // Expected: 2
-        System.out.println("Count words equal to 'app': " + trie.countWordsEqualTo("app")); // Expected: 1
-        System.out.println("Count words starting with 'app': " + trie.countWordsStartingWith("app")); // Expected: 3
-
-        trie.erase("apple");
-        System.out.println("After erasing one 'apple':");
-        System.out.println("Count words equal to 'apple': " + trie.countWordsEqualTo("apple")); // Expected: 1
-        System.out.println("Count words starting with 'app': " + trie.countWordsStartingWith("app")); // Expected: 2
-    }
 }
 /**
  * Approach:

@@ -33,19 +33,6 @@ class Valid_anagram {
         return map.isEmpty();
     }
 
-    public static void main(String[] args) {
-        Valid_anagram solution = new Valid_anagram();
-
-        // Test case 1
-        String s1 = "anagram", t1 = "nagaram";
-        System.out.println("Input: s = \"" + s1 + "\", t = \"" + t1 + "\"");
-        System.out.println("Output: " + solution.isAnagram(s1, t1) + " (Expected: true)");
-
-        // Test case 2
-        String s2 = "rat", t2 = "car";
-        System.out.println("Input: s = \"" + s2 + "\", t = \"" + t2 + "\"");
-        System.out.println("Output: " + solution.isAnagram(s2, t2) + " (Expected: false)");
-    }
 }
 
 /*

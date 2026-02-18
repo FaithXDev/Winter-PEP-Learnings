@@ -60,33 +60,7 @@ public class Reverse_Nodes_in_k_Group {
         return dummy.next;
     }
 
-    // Helper method to print the linked list
-    public static void printList(ListNode head) {
-        ListNode current = head;
-        while (current != null) {
-            System.out.print(current.val + " -> ");
-            current = current.next;
-        }
-        System.out.println("null");
-    }
 
-    public static void main(String[] args) {
-        Reverse_Nodes_in_k_Group solution = new Reverse_Nodes_in_k_Group();
-
-        // Test Case 1: head = [1,2,3,4,5], k = 2
-        ListNode head1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-        System.out.println("Original List 1: 1 -> 2 -> 3 -> 4 -> 5 -> null");
-        ListNode result1 = solution.reverseKGroup(head1, 2);
-        System.out.print("Reversed (k=2): ");
-        printList(result1);
-
-        // Test Case 2: head = [1,2,3,4,5], k = 3
-        ListNode head2 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-        System.out.println("\nOriginal List 2: 1 -> 2 -> 3 -> 4 -> 5 -> null");
-        ListNode result2 = solution.reverseKGroup(head2, 3);
-        System.out.print("Reversed (k=3): ");
-        printList(result2);
-    }
 }
 /**
  * Approach:

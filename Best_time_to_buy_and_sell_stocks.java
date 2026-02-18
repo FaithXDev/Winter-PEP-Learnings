@@ -31,19 +31,6 @@ public class Best_time_to_buy_and_sell_stocks {
         return maxProfit;
     }
 
-    public static void main(String[] args) {
-        Best_time_to_buy_and_sell_stocks solution = new Best_time_to_buy_and_sell_stocks();
-
-        // Test case 1
-        int[] prices1 = { 7, 1, 5, 3, 6, 4 };
-        System.out.println("Input: [7, 1, 5, 3, 6, 4]");
-        System.out.println("Output: " + solution.maxProfit(prices1) + " (Expected: 5)");
-
-        // Test case 2
-        int[] prices2 = { 7, 6, 4, 3, 1 };
-        System.out.println("Input: [7, 6, 4, 3, 1]");
-        System.out.println("Output: " + solution.maxProfit(prices2) + " (Expected: 0)");
-    }
 }
 
 /*

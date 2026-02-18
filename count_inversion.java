@@ -68,60 +68,7 @@ public class count_inversion {
         return inversions;
     }
 
-    public static void printArray(int[] arr) {
-        System.out.print("[");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-            if (i < arr.length - 1)
-                System.out.print(", ");
-        }
-        System.out.println("]");
-    }
 
-    public static void main(String[] args) {
-        // Test Case 1: Standard case
-        int[] arr1 = { 8, 4, 2, 1 };
-        System.out.println("Test Case 1:");
-        System.out.print("Original: ");
-        printArray(arr1);
-        int inv1 = inversionCount(arr1);
-        System.out.println("Inversions: " + inv1); // Expected: 6 (8>4, 8>2, 8>1, 4>2, 4>1, 2>1)
-        System.out.println();
-
-        // Test Case 2: Already sorted
-        int[] arr2 = { 1, 2, 3, 4 };
-        System.out.println("Test Case 2 (Sorted):");
-        System.out.print("Original: ");
-        printArray(arr2);
-        int inv2 = inversionCount(arr2);
-        System.out.println("Inversions: " + inv2); // Expected: 0
-        System.out.println();
-
-        // Test Case 3: Reverse sorted
-        int[] arr3 = { 5, 4, 3, 2, 1 };
-        System.out.println("Test Case 3 (Reverse Sorted):");
-        System.out.print("Original: ");
-        printArray(arr3);
-        int inv3 = inversionCount(arr3);
-        System.out.println("Inversions: " + inv3); // Expected: 10
-        System.out.println();
-
-        // Test Case 4: Duplicates
-        // Duplicates (arr[i] == arr[j]) are not inversions.
-        int[] arr4 = { 2, 2, 1, 1 }; // (2,1), (2,1), (2,1), (2,1) ??
-        // Pairs:
-        // (0, 2): 2 > 1 -> Inv
-        // (0, 3): 2 > 1 -> Inv
-        // (1, 2): 2 > 1 -> Inv
-        // (1, 3): 2 > 1 -> Inv
-        // Total 4.
-        System.out.println("Test Case 4 (Duplicates):");
-        System.out.print("Original: ");
-        printArray(arr4);
-        int inv4 = inversionCount(arr4);
-        System.out.println("Inversions: " + inv4);
-        System.out.println();
-    }
 }
 
 /*

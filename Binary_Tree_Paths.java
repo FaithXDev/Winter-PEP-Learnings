@@ -52,21 +52,6 @@ public class Binary_Tree_Paths {
         }
     }
 
-    public static void main(String[] args) {
-        Binary_Tree_Paths solution = new Binary_Tree_Paths();
-
-        // Test Case 1: [1,2,3,null,5]
-        TreeNode root1 = new TreeNode(1);
-        root1.left = new TreeNode(2);
-        root1.right = new TreeNode(3);
-        root1.left.right = new TreeNode(5);
-
-        System.out.println("Test Case 1: " + solution.binaryTreePaths(root1)); // Expected: ["1->2->5", "1->3"]
-
-        // Test Case 2: [1]
-        TreeNode root2 = new TreeNode(1);
-        System.out.println("Test Case 2: " + solution.binaryTreePaths(root2)); // Expected: ["1"]
-    }
 }
 
 /*

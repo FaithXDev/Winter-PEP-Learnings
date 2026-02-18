@@ -25,40 +25,6 @@ public class Kth_Largest_Element_in_an_Array {
         return nums[nums.length - k];
     }
 
-    public static void main(String[] args) {
-        Kth_Largest_Element_in_an_Array solver = new Kth_Largest_Element_in_an_Array();
-
-        // Test Case 1
-        int[] nums1 = { 3, 2, 1, 5, 6, 4 };
-        int k1 = 2;
-        System.out.println("Test Case 1:");
-        System.out.println("Input: nums = " + Arrays.toString(nums1) + ", k = " + k1);
-        System.out.println("Output: " + solver.findKthLargest(nums1, k1)); // Expected: 5
-        System.out.println();
-
-        // Test Case 2
-        int[] nums2 = { 3, 2, 3, 1, 2, 4, 5, 5, 6 };
-        int k2 = 4;
-        System.out.println("Test Case 2:");
-        System.out.println("Input: nums = " + Arrays.toString(nums2) + ", k = " + k2);
-        System.out.println("Output: " + solver.findKthLargest(nums2, k2)); // Expected: 4
-        System.out.println();
-
-        // Edge Case: k = 1 (Largest element)
-        int[] nums3 = { 10, 20, 30 };
-        int k3 = 1;
-        System.out.println("Test Case 3 (Largest Element):");
-        System.out.println("Input: nums = " + Arrays.toString(nums3) + ", k = " + k3);
-        System.out.println("Output: " + solver.findKthLargest(nums3, k3)); // Expected: 30
-        System.out.println();
-
-        // Edge Case: k = length of array (Smallest element)
-        int[] nums4 = { 10, 20, 30 };
-        int k4 = 3;
-        System.out.println("Test Case 4 (Smallest Element):");
-        System.out.println("Input: nums = " + Arrays.toString(nums4) + ", k = " + k4);
-        System.out.println("Output: " + solver.findKthLargest(nums4, k4)); // Expected: 10
-    }
 }
 
 /*

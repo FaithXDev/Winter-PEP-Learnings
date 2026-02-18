@@ -40,43 +40,6 @@ public class asteroid_collision {
         return result;
     }
 
-    public static void main(String[] args) {
-        asteroid_collision solution = new asteroid_collision();
-
-        // Test Case 1
-        int[] test1 = { 5, 10, -5 };
-        System.out.println("Test 1: " + Arrays.toString(test1));
-        System.out.println("Result: " + Arrays.toString(solution.asteroidCollision(test1)));
-        System.out.println("Expected: [5, 10]");
-        System.out.println();
-
-        // Test Case 2
-        int[] test2 = { 8, -8 };
-        System.out.println("Test 2: " + Arrays.toString(test2));
-        System.out.println("Result: " + Arrays.toString(solution.asteroidCollision(test2)));
-        System.out.println("Expected: []");
-        System.out.println();
-
-        // Test Case 3
-        int[] test3 = { 10, 2, -5 };
-        System.out.println("Test 3: " + Arrays.toString(test3));
-        System.out.println("Result: " + Arrays.toString(solution.asteroidCollision(test3)));
-        System.out.println("Expected: [10]");
-        System.out.println();
-
-        // Test Case 4
-        int[] test4 = { -2, -1, 1, 2 };
-        System.out.println("Test 4: " + Arrays.toString(test4));
-        System.out.println("Result: " + Arrays.toString(solution.asteroidCollision(test4)));
-        System.out.println("Expected: [-2, -1, 1, 2]");
-        System.out.println();
-
-        // Test Case 5
-        int[] test5 = { 1, 2, 3, -10 };
-        System.out.println("Test 5: " + Arrays.toString(test5));
-        System.out.println("Result: " + Arrays.toString(solution.asteroidCollision(test5)));
-        System.out.println("Expected: [-10]");
-    }
 }
 
 /*

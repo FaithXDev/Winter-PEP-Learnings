@@ -38,27 +38,6 @@ public class Search_in_Rotated_Sorted_Array {
         return -1;
     }
 
-    public static void main(String[] args) {
-        Search_in_Rotated_Sorted_Array solution = new Search_in_Rotated_Sorted_Array();
-
-        // Test case 1
-        int[] nums1 = { 4, 5, 6, 7, 0, 1, 2 };
-        int target1 = 0;
-        System.out.println("Input: nums = [4,5,6,7,0,1,2], target = 0");
-        System.out.println("Output: " + solution.search(nums1, target1)); // Expected: 4
-
-        // Test case 2
-        int[] nums2 = { 4, 5, 6, 7, 0, 1, 2 };
-        int target2 = 3;
-        System.out.println("Input: nums = [4,5,6,7,0,1,2], target = 3");
-        System.out.println("Output: " + solution.search(nums2, target2)); // Expected: -1
-
-        // Test case 3
-        int[] nums3 = { 1 };
-        int target3 = 0;
-        System.out.println("Input: nums = [1], target = 0");
-        System.out.println("Output: " + solution.search(nums3, target3)); // Expected: -1
-    }
 }
 
 /*

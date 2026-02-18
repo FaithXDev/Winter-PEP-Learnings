@@ -113,41 +113,6 @@ public class Binary_Tree_Postorder_Traversal {
         return root;
     }
 
-    public static void main(String[] args) {
-        Solution_145 solution = new Solution_145();
-
-        // Test Case 1: [1,null,2,3]
-        System.out.println("Test Case 1:");
-        Integer[] input1 = { 1, null, 2, 3 };
-        TreeNode_145 root1 = createTree(input1);
-        System.out.println("Input: root = [1, null, 2, 3]");
-        List<Integer> result1 = solution.postorderTraversal(root1);
-        System.out.println("Output: " + result1);
-        System.out.println("Expected: [3, 2, 1]");
-        System.out.println();
-
-        // Test Case 2: []
-        System.out.println("Test Case 2:");
-        Integer[] input2 = {};
-        TreeNode_145 root2 = createTree(input2);
-        System.out.println("Input: root = []");
-        List<Integer> result2 = solution.postorderTraversal(root2);
-        System.out.println("Output: " + result2);
-        System.out.println("Expected: []");
-        System.out.println();
-
-        // Test Case 3: [1]
-        System.out.println("Test Case 3:");
-        Integer[] input3 = { 1 };
-        TreeNode_145 root3 = createTree(input3);
-        System.out.println("Input: root = [1]");
-        List<Integer> result3 = solution.postorderTraversal(root3);
-        System.out.println("Output: " + result3);
-        System.out.println("Expected: [1]");
-        System.out.println();
-
-        System.out.println("\u2705 All test cases completed!");
-    }
 }
 
 /**

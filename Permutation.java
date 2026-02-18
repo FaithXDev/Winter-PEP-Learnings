@@ -34,24 +34,6 @@ public class Permutation {
         }
     }
 
-    public static void main(String[] args) {
-        Permutation solution = new Permutation();
-
-        // Test case 1
-        int[] nums1 = { 1, 2, 3 };
-        System.out.println("Input: [1, 2, 3]");
-        System.out.println("Output: " + solution.permute(nums1));
-
-        // Test case 2
-        int[] nums2 = { 0, 1 };
-        System.out.println("Input: [0, 1]");
-        System.out.println("Output: " + solution.permute(nums2));
-
-        // Test case 3
-        int[] nums3 = { 1 };
-        System.out.println("Input: [1]");
-        System.out.println("Output: " + solution.permute(nums3));
-    }
 }
 
 /*

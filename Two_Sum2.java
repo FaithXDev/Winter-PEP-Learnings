@@ -29,30 +29,6 @@ public class Two_Sum2 {
         return new int[] { -1, -1 };
     }
 
-    public static void main(String[] args) {
-        Two_Sum2 solution = new Two_Sum2();
-
-        // Test case 1
-        int[] numbers1 = { 2, 7, 11, 15 };
-        int target1 = 9;
-        int[] result1 = solution.twoSum(numbers1, target1);
-        System.out.println("Input: numbers = [2,7,11,15], target = 9");
-        System.out.println("Output: [" + result1[0] + ", " + result1[1] + "] (Expected: [1, 2])");
-
-        // Test case 2
-        int[] numbers2 = { 2, 3, 4 };
-        int target2 = 6;
-        int[] result2 = solution.twoSum(numbers2, target2);
-        System.out.println("Input: numbers = [2,3,4], target = 6");
-        System.out.println("Output: [" + result2[0] + ", " + result2[1] + "] (Expected: [1, 3])");
-
-        // Test case 3
-        int[] numbers3 = { -1, 0 };
-        int target3 = -1;
-        int[] result3 = solution.twoSum(numbers3, target3);
-        System.out.println("Input: numbers = [-1,0], target = -1");
-        System.out.println("Output: [" + result3[0] + ", " + result3[1] + "] (Expected: [1, 2])");
-    }
 }
 
 /*

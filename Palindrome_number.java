@@ -26,15 +26,6 @@ public class Palindrome_number {
         return original == reversed;
     }
 
-    public static void main(String[] args) {
-        Palindrome_number solution = new Palindrome_number();
-
-        int[] tests = { 121, -121, 10, 12321, 0 };
-
-        for (int x : tests) {
-            System.out.println("Input: " + x + " -> Output: " + solution.isPalindrome(x));
-        }
-    }
 }
 
 /*

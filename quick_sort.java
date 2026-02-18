@@ -53,54 +53,7 @@ public class quick_sort {
         return i + 1;
     }
 
-    /**
-     * Helper method to print the array.
-     * 
-     * @param arr The array to print
-     */
-    public static void printArray(int[] arr) {
-        for (int value : arr) {
-            System.out.print(value + " ");
-        }
-        System.out.println();
-    }
 
-    public static void main(String[] args) {
-        // Test Case 1: Unsorted array
-        int[] arr1 = { 10, 7, 8, 9, 1, 5 };
-        System.out.println("Original Array 1:");
-        printArray(arr1);
-        quickSort(arr1, 0, arr1.length - 1);
-        System.out.println("Sorted Array 1:");
-        printArray(arr1);
-        System.out.println();
-
-        // Test Case 2: Already sorted array
-        int[] arr2 = { 1, 2, 3, 4, 5 };
-        System.out.println("Original Array 2 (Sorted):");
-        printArray(arr2);
-        quickSort(arr2, 0, arr2.length - 1);
-        System.out.println("Sorted Array 2:");
-        printArray(arr2);
-        System.out.println();
-
-        // Test Case 3: Reverse sorted array
-        int[] arr3 = { 5, 4, 3, 2, 1 };
-        System.out.println("Original Array 3 (Reverse):");
-        printArray(arr3);
-        quickSort(arr3, 0, arr3.length - 1);
-        System.out.println("Sorted Array 3:");
-        printArray(arr3);
-        System.out.println();
-
-        // Test Case 4: Array with duplicates
-        int[] arr4 = { 3, 1, 4, 1, 5, 9, 2, 6, 5 };
-        System.out.println("Original Array 4 (Duplicates):");
-        printArray(arr4);
-        quickSort(arr4, 0, arr4.length - 1);
-        System.out.println("Sorted Array 4:");
-        printArray(arr4);
-    }
 }
 
 /*

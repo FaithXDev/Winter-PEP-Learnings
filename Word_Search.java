@@ -46,28 +46,6 @@ public class Word_Search {
         return found;
     }
 
-    public static void main(String[] args) {
-        Word_Search solution = new Word_Search();
-
-        char[][] board = {
-                { 'A', 'B', 'C', 'E' },
-                { 'S', 'F', 'C', 'S' },
-                { 'A', 'D', 'E', 'E' }
-        };
-
-        String word1 = "ABCCED";
-        System.out.println("Board:");
-        for (char[] row : board) {
-            System.out.println(java.util.Arrays.toString(row));
-        }
-        System.out.println("Word: " + word1 + " -> " + solution.exist(board, word1) + " (Expected: true)");
-
-        String word2 = "SEE";
-        System.out.println("Word: " + word2 + " -> " + solution.exist(board, word2) + " (Expected: true)");
-
-        String word3 = "ABCB";
-        System.out.println("Word: " + word3 + " -> " + solution.exist(board, word3) + " (Expected: false)");
-    }
 }
 
 /*

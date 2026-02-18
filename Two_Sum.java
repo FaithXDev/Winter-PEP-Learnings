@@ -25,17 +25,6 @@ public class Two_Sum {
         throw new IllegalArgumentException("No two sum solution");
     }
 
-    public static void main(String[] args) {
-        Two_Sum solution = new Two_Sum();
-        int[] nums = { 2, 7, 11, 15 };
-        int target = 9;
-        try {
-            int[] result = solution.twoSum(nums, target);
-            out.println("Indices: [" + result[0] + ", " + result[1] + "]");
-        } catch (Exception e) {
-            out.println(e.getMessage());
-        }
-    }
 }
 
 /*

@@ -26,22 +26,6 @@ public class Sort_colors {
         nums[j] = temp;
     }
 
-    public static void main(String[] args) {
-        Sort_colors solution = new Sort_colors();
-
-        // Test Case 1
-        int[] nums1 = { 2, 0, 2, 1, 1, 0 };
-        System.out.println("Original Array: " + Arrays.toString(nums1));
-        solution.sortColors(nums1);
-        System.out.println("Sorted Array:   " + Arrays.toString(nums1));
-        System.out.println();
-
-        // Test Case 2
-        int[] nums2 = { 2, 0, 1 };
-        System.out.println("Original Array: " + Arrays.toString(nums2));
-        solution.sortColors(nums2);
-        System.out.println("Sorted Array:   " + Arrays.toString(nums2));
-    }
 }
 
 /*

@@ -55,19 +55,6 @@ public class Single_Threaded_CPU {
         return result;
     }
 
-    public static void main(String[] args) {
-        Single_Threaded_CPU solution = new Single_Threaded_CPU();
-
-        // Test Case 1
-        int[][] tasks1 = { { 1, 2 }, { 2, 4 }, { 3, 2 }, { 4, 1 } };
-        int[] result1 = solution.getOrder(tasks1);
-        System.out.println("Order for tasks [[1,2],[2,4],[3,2],[4,1]]: " + Arrays.toString(result1));
-
-        // Test Case 2
-        int[][] tasks2 = { { 7, 10 }, { 7, 12 }, { 7, 5 }, { 7, 4 }, { 7, 2 } };
-        int[] result2 = solution.getOrder(tasks2);
-        System.out.println("Order for tasks [[7,10],[7,12],[7,5],[7,4],[7,2]]: " + Arrays.toString(result2));
-    }
 }
 /**
  * Approach:

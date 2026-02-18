@@ -27,26 +27,6 @@ public class Perfect_Number {
         return sum == num;
     }
 
-    public static void main(String[] args) {
-        Perfect_Number solution = new Perfect_Number();
-
-        // Test case 1
-        int num1 = 28;
-        System.out.println("Input: " + num1);
-        System.out.println("Output: " + solution.checkPerfectNumber(num1) + " (Expected: true)");
-        // Divisors of 28: 1, 2, 4, 7, 14. Sum = 1 + 2 + 4 + 7 + 14 = 28.
-
-        // Test case 2
-        int num2 = 7;
-        System.out.println("Input: " + num2);
-        System.out.println("Output: " + solution.checkPerfectNumber(num2) + " (Expected: false)");
-        // Divisors of 7: 1. Sum = 1 != 7.
-
-        // Test case 3
-        int num3 = 496;
-        System.out.println("Input: " + num3);
-        System.out.println("Output: " + solution.checkPerfectNumber(num3) + " (Expected: true)");
-    }
 }
 
 /*

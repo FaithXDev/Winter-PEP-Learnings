@@ -66,31 +66,6 @@ public class Implement_stack_using_queue {
         return q1.isEmpty();
     }
 
-    public static void main(String[] args) {
-        Implement_stack_using_queue stack = new Implement_stack_using_queue();
-
-        // Test Case 1
-        System.out.println("Test Case 1:");
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        System.out.println("Top: " + stack.top()); // Expected: 3
-        System.out.println("Pop: " + stack.pop()); // Expected: 3
-        System.out.println("Empty: " + stack.empty()); // Expected: false
-        System.out.println("Pop: " + stack.pop()); // Expected: 2
-        System.out.println("Pop: " + stack.pop()); // Expected: 1
-        System.out.println("Empty: " + stack.empty()); // Expected: true
-
-        System.out.println();
-
-        // Test Case 2
-        System.out.println("Test Case 2:");
-        Implement_stack_using_queue stack2 = new Implement_stack_using_queue();
-        stack2.push(5);
-        System.out.println("Top: " + stack2.top()); // Expected: 5
-        System.out.println("Pop: " + stack2.pop()); // Expected: 5
-        System.out.println("Empty: " + stack2.empty()); // Expected: true
-    }
 }
 
 /*

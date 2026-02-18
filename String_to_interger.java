@@ -39,24 +39,6 @@ public class String_to_interger {
         return (int) (result * sign);
     }
 
-    public static void main(String[] args) {
-        String_to_interger solution = new String_to_interger();
-
-        String[] tests = {
-                "42",
-                "   -42",
-                "4193 with words",
-                "words and 987",
-                "-91283472332",
-                "3.14159",
-                "+1",
-                "2147483648" // Overflow int max
-        };
-
-        for (String str : tests) {
-            System.out.println("Input: \"" + str + "\" -> Output: " + solution.myAtoi(str));
-        }
-    }
 }
 
 /*

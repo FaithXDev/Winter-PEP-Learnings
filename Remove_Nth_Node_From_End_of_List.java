@@ -59,57 +59,7 @@ public class Remove_Nth_Node_From_End_of_List {
         return head;
     }
 
-    // Helper method to print a linked list
-    public static void printList(ListNode head) {
-        System.out.print("[");
-        ListNode current = head;
-        while (current != null) {
-            System.out.print(current.val);
-            if (current.next != null)
-                System.out.print(",");
-            current = current.next;
-        }
-        System.out.println("]");
-    }
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-
-        // Test Case 1: head = [1,2,3,4,5], n = 2
-        // Expected Output: [1,2,3,5]
-        System.out.println("Test Case 1:");
-        ListNode head1 = createList(new int[] { 1, 2, 3, 4, 5 });
-        System.out.print("Input: ");
-        printList(head1);
-        System.out.println("n = 2");
-        ListNode result1 = solution.removeNthFromEnd(head1, 2);
-        System.out.print("Output: ");
-        printList(result1);
-        System.out.println();
-
-        // Test Case 2: head = [1], n = 1
-        // Expected Output: []
-        System.out.println("Test Case 2:");
-        ListNode head2 = createList(new int[] { 1 });
-        System.out.print("Input: ");
-        printList(head2);
-        System.out.println("n = 1");
-        ListNode result2 = solution.removeNthFromEnd(head2, 1);
-        System.out.print("Output: ");
-        printList(result2);
-        System.out.println();
-
-        // Test Case 3: head = [1,2], n = 1
-        // Expected Output: [1]
-        System.out.println("Test Case 3:");
-        ListNode head3 = createList(new int[] { 1, 2 });
-        System.out.print("Input: ");
-        printList(head3);
-        System.out.println("n = 1");
-        ListNode result3 = solution.removeNthFromEnd(head3, 1);
-        System.out.print("Output: ");
-        printList(result3);
-    }
 }
 
 /**

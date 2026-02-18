@@ -18,24 +18,6 @@ public class Contains_Duplicates {
         return false;
     }
 
-    public static void main(String[] args) {
-        Contains_Duplicates solution = new Contains_Duplicates();
-
-        // Test case 1
-        int[] nums1 = { 1, 2, 3, 1 };
-        System.out.println("Input: [1, 2, 3, 1]");
-        System.out.println("Output: " + solution.containsDuplicate(nums1) + " (Expected: true)");
-
-        // Test case 2
-        int[] nums2 = { 1, 2, 3, 4 };
-        System.out.println("Input: [1, 2, 3, 4]");
-        System.out.println("Output: " + solution.containsDuplicate(nums2) + " (Expected: false)");
-
-        // Test case 3
-        int[] nums3 = { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 };
-        System.out.println("Input: [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]");
-        System.out.println("Output: " + solution.containsDuplicate(nums3) + " (Expected: true)");
-    }
 }
 
 /*

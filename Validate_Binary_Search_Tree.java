@@ -46,40 +46,6 @@ public class Validate_Binary_Search_Tree {
         return isValid(node.left, min, node.val) && isValid(node.right, node.val, max);
     }
 
-    public static void main(String[] args) {
-        Validate_Binary_Search_Tree solution = new Validate_Binary_Search_Tree();
-
-        // Test Case 1: Valid BST
-        // Input: [2,1,3]
-        // Tree:
-        // 2
-        // / \
-        // 1 3
-        TreeNode root1 = new TreeNode(2);
-        root1.left = new TreeNode(1);
-        root1.right = new TreeNode(3);
-        System.out.println("Test Case 1 (Expected: true): " + solution.isValidBST(root1));
-
-        // Test Case 2: Invalid BST
-        // Input: [5,1,4,null,null,3,6]
-        // Tree:
-        // 5
-        // / \
-        // 1 4
-        // / \
-        // 3 6
-        TreeNode root2 = new TreeNode(5);
-        root2.left = new TreeNode(1);
-        root2.right = new TreeNode(4);
-        root2.right.left = new TreeNode(3);
-        root2.right.right = new TreeNode(6);
-        System.out.println("Test Case 2 (Expected: false): " + solution.isValidBST(root2));
-
-        // Test Case 3: Edge case with Integer limits
-        // This test ensures that using Long handles integer boundary values correctly.
-        TreeNode root3 = new TreeNode(Integer.MAX_VALUE);
-        System.out.println("Test Case 3 (Expected: true): " + solution.isValidBST(root3));
-    }
 }
 
 /**

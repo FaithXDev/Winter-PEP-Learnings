@@ -27,17 +27,6 @@ public class Reversed_integer {
         return result;
     }
 
-    public static void main(String[] args) {
-        Reversed_integer solution = new Reversed_integer();
-
-        // Test cases
-        int[] tests = { 123, -123, 120, 0, 1534236469 };
-        // 1534236469 reversed is 9646324351 which overflows 32-bit int
-
-        for (int x : tests) {
-            System.out.println("Input: " + x + " -> Output: " + solution.reverse(x));
-        }
-    }
 }
 
 /*

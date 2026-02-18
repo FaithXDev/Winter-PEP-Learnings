@@ -33,24 +33,6 @@ public class Find_all_duplicates_in_an_array {
         return duplicates;
     }
 
-    public static void main(String[] args) {
-        Find_all_duplicates_in_an_array solution = new Find_all_duplicates_in_an_array();
-
-        // Test case 1
-        int[] nums1 = { 4, 3, 2, 7, 8, 2, 3, 1 };
-        System.out.println("Input: [4, 3, 2, 7, 8, 2, 3, 1]");
-        System.out.println("Output: " + solution.findDuplicates(nums1)); // Expected: [2, 3] or [3, 2]
-
-        // Test case 2
-        int[] nums2 = { 1, 1, 2 };
-        System.out.println("Input: [1, 1, 2]");
-        System.out.println("Output: " + solution.findDuplicates(nums2)); // Expected: [1]
-
-        // Test case 3
-        int[] nums3 = { 1 };
-        System.out.println("Input: [1]");
-        System.out.println("Output: " + solution.findDuplicates(nums3)); // Expected: []
-    }
 }
 
 /*

@@ -47,27 +47,6 @@ public class Minimum_Number_of_Days_to_Make_m_Bouquets {
         return bouquets >= m;
     }
 
-    public static void main(String[] args) {
-        Minimum_Number_of_Days_to_Make_m_Bouquets solver = new Minimum_Number_of_Days_to_Make_m_Bouquets();
-
-        // Test Case 1
-        int[] bloomDay1 = { 1, 10, 3, 10, 2 };
-        int m1 = 3;
-        int k1 = 1;
-        System.out.println("Test Case 1: " + solver.minDays(bloomDay1, m1, k1)); // Expected: 3
-
-        // Test Case 2
-        int[] bloomDay2 = { 1, 10, 3, 10, 2 };
-        int m2 = 3;
-        int k2 = 2;
-        System.out.println("Test Case 2: " + solver.minDays(bloomDay2, m2, k2)); // Expected: -1
-
-        // Test Case 3
-        int[] bloomDay3 = { 7, 7, 7, 7, 12, 7, 7 };
-        int m3 = 2;
-        int k3 = 3;
-        System.out.println("Test Case 3: " + solver.minDays(bloomDay3, m3, k3)); // Expected: 12
-    }
 }
 
 /*

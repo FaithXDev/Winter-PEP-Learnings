@@ -45,32 +45,6 @@ public class Add_Two_Number {
         return dummy.next; // Return the head of the result list (skipping dummy)
     }
 
-    public static void main(String[] args) {
-        Add_Two_Number solution = new Add_Two_Number();
-
-        // Create first number: 2 -> 4 -> 3 (342)
-        ListNode l1 = new ListNode(2);
-        l1.next = new ListNode(4);
-        l1.next.next = new ListNode(3);
-
-        // Create second number: 5 -> 6 -> 4 (465)
-        ListNode l2 = new ListNode(5);
-        l2.next = new ListNode(6);
-        l2.next.next = new ListNode(4);
-
-        ListNode result = solution.addTwoNumbers(l1, l2);
-
-        // Print result
-        System.out.print("Result: ");
-        while (result != null) {
-            System.out.print(result.val);
-            if (result.next != null) {
-                System.out.print(" -> ");
-            }
-            result = result.next;
-        }
-        System.out.println();
-    }
 }
 
 /*

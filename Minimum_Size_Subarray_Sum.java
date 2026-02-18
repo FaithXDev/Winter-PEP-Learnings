@@ -41,45 +41,6 @@ public class Minimum_Size_Subarray_Sum {
         return minLength == Integer.MAX_VALUE ? 0 : minLength;
     }
 
-    public static void main(String[] args) {
-        Minimum_Size_Subarray_Sum solver = new Minimum_Size_Subarray_Sum();
-
-        // Test Case 1
-        int target1 = 7;
-        int[] nums1 = { 2, 3, 1, 2, 4, 3 };
-        System.out.println("Test Case 1:");
-        System.out.println("Target: " + target1 + ", Nums: " + arrayToString(nums1));
-        System.out.println("Result: " + solver.minSubArrayLen(target1, nums1));
-        System.out.println("Expected: 2");
-        System.out.println();
-
-        // Test Case 2
-        int target2 = 4;
-        int[] nums2 = { 1, 4, 4 };
-        System.out.println("Test Case 2:");
-        System.out.println("Target: " + target2 + ", Nums: " + arrayToString(nums2));
-        System.out.println("Result: " + solver.minSubArrayLen(target2, nums2));
-        System.out.println("Expected: 1");
-        System.out.println();
-
-        // Test Case 3
-        int target3 = 11;
-        int[] nums3 = { 1, 1, 1, 1, 1, 1, 1, 1 };
-        System.out.println("Test Case 3:");
-        System.out.println("Target: " + target3 + ", Nums: " + arrayToString(nums3));
-        System.out.println("Result: " + solver.minSubArrayLen(target3, nums3));
-        System.out.println("Expected: 0");
-        System.out.println();
-
-        // Test Case 4
-        int target4 = 15;
-        int[] nums4 = { 1, 2, 3, 4, 5 };
-        System.out.println("Test Case 4:");
-        System.out.println("Target: " + target4 + ", Nums: " + arrayToString(nums4));
-        System.out.println("Result: " + solver.minSubArrayLen(target4, nums4));
-        System.out.println("Expected: 5");
-        System.out.println();
-    }
 
     private static String arrayToString(int[] arr) {
         StringBuilder sb = new StringBuilder("[");

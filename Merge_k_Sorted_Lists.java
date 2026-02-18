@@ -58,41 +58,7 @@ public class Merge_k_Sorted_Lists {
         return dummy.next;
     }
 
-    // Helper method to print the linked list
-    public static void printList(ListNode head) {
-        ListNode current = head;
-        while (current != null) {
-            System.out.print(current.val + " -> ");
-            current = current.next;
-        }
-        System.out.println("null");
-    }
 
-    public static void main(String[] args) {
-        Merge_k_Sorted_Lists solution = new Merge_k_Sorted_Lists();
-
-        // Test Case 1: lists = [[1,4,5],[1,3,4],[2,6]]
-        ListNode l1 = new ListNode(1, new ListNode(4, new ListNode(5)));
-        ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
-        ListNode l3 = new ListNode(2, new ListNode(6));
-        ListNode[] lists1 = { l1, l2, l3 };
-
-        System.out.println("Merged List 1:");
-        ListNode result1 = solution.mergeKLists(lists1);
-        printList(result1);
-
-        // Test Case 2: lists = []
-        ListNode[] lists2 = {};
-        System.out.println("Merged List 2:");
-        ListNode result2 = solution.mergeKLists(lists2);
-        printList(result2);
-
-        // Test Case 3: lists = [[]]
-        ListNode[] lists3 = { null };
-        System.out.println("Merged List 3:");
-        ListNode result3 = solution.mergeKLists(lists3);
-        printList(result3);
-    }
 }
 /**
  * Approach:

@@ -81,21 +81,6 @@ public class Implement_trie {
         return true;
     }
 
-    public static void main(String[] args) {
-        Implement_trie trie = new Implement_trie();
-
-        // Test Case 1: Insert and Search
-        trie.insert("apple");
-        System.out.println("Search 'apple' (Expected: true): " + trie.search("apple")); // returns true
-        System.out.println("Search 'app' (Expected: false): " + trie.search("app")); // returns false
-
-        // Test Case 2: StartsWith
-        System.out.println("StartsWith 'app' (Expected: true): " + trie.startsWith("app")); // returns true
-
-        // Test Case 3: Insert new word 'app' and search again
-        trie.insert("app");
-        System.out.println("Search 'app' (Expected: true): " + trie.search("app")); // returns true
-    }
 }
 
 /**

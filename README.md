@@ -99,8 +99,8 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Merge k Sorted Lists](Merge_k_Sorted_Lists.java)
 - [Candy](Candy.java)
 - [Maximize Sum Of Array After K Negations](Maximize_Sum_Of_Array_After_K_Negations.java)
-- []
-
+- [House Robber](House_Robber.java)
+- [N-th Tribonacci Number](N_th_Tribonacci_Number.java)
 
 
 

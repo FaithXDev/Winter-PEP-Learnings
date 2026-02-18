@@ -43,24 +43,6 @@ public class Find_Median_from_Data_Stream {
         }
     }
 
-    public static void main(String[] args) {
-        Find_Median_from_Data_Stream medianFinder = new Find_Median_from_Data_Stream();
-
-        // Example 1
-        medianFinder.addNum(1); // arr = [1]
-        medianFinder.addNum(2); // arr = [1, 2]
-        System.out.println("Median after adding 1 and 2 (Expected: 1.5): " + medianFinder.findMedian());
-
-        medianFinder.addNum(3); // arr = [1, 2, 3]
-        System.out.println("Median after adding 3 (Expected: 2.0): " + medianFinder.findMedian());
-
-        // Additional Test Case
-        medianFinder.addNum(4); // arr = [1, 2, 3, 4]
-        System.out.println("Median after adding 4 (Expected: 2.5): " + medianFinder.findMedian());
-
-        medianFinder.addNum(5); // arr = [1, 2, 3, 4, 5]
-        System.out.println("Median after adding 5 (Expected: 3.0): " + medianFinder.findMedian());
-    }
 }
 
 /**

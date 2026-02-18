@@ -28,22 +28,6 @@ public class Last_Stone_Weight {
         return maxHeap.isEmpty() ? 0 : maxHeap.peek();
     }
 
-    public static void main(String[] args) {
-        Last_Stone_Weight solution = new Last_Stone_Weight();
-
-        // Test Case 1
-        int[] stones1 = { 2, 7, 4, 1, 8, 1 };
-        System.out.println("Last stone weight for [2,7,4,1,8,1] (Expected: 1): " + solution.lastStoneWeight(stones1));
-
-        // Test Case 2
-        int[] stones2 = { 1 };
-        System.out.println("Last stone weight for [1] (Expected: 1): " + solution.lastStoneWeight(stones2));
-
-        // Test Case 3: Empty (conceptually, though constraints say 1 <= stones.length)
-        // If we conceptually had [2, 2], result is 0
-        int[] stones3 = { 2, 2 };
-        System.out.println("Last stone weight for [2, 2] (Expected: 0): " + solution.lastStoneWeight(stones3));
-    }
 }
 /**
  * Approach:

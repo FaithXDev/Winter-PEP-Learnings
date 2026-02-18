@@ -30,22 +30,6 @@ class Maximize_Sum_Of_Array_After_K_Negations {
         return sum;
     }
 
-    // Main method for testing
-    public static void main(String[] args) {
-        Maximize_Sum_Of_Array_After_K_Negations solution = new Maximize_Sum_Of_Array_After_K_Negations();
-
-        // Test Case 1: nums = [4,2,3], k = 1 -> Output: 5
-        int[] nums1 = { 4, 2, 3 };
-        System.out.println("Test 1: " + solution.largestSumAfterKNegations(nums1, 1)); // Expected: 5
-
-        // Test Case 2: nums = [3,-1,0,2], k = 3 -> Output: 6
-        int[] nums2 = { 3, -1, 0, 2 };
-        System.out.println("Test 2: " + solution.largestSumAfterKNegations(nums2, 3)); // Expected: 6
-
-        // Test Case 3: nums = [2,-3,-1,5,-4], k = 2 -> Output: 13
-        int[] nums3 = { 2, -3, -1, 5, -4 };
-        System.out.println("Test 3: " + solution.largestSumAfterKNegations(nums3, 2)); // Expected: 13
-    }
 }
 
 // ==================== APPROACH ====================

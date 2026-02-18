@@ -27,27 +27,6 @@ public class K_Closest_Points_to_Origin {
         return result;
     }
 
-    public static void main(String[] args) {
-        K_Closest_Points_to_Origin solution = new K_Closest_Points_to_Origin();
-
-        // Test Case 1
-        int[][] points1 = { { 1, 3 }, { -2, 2 } };
-        int k1 = 1;
-        int[][] result1 = solution.kClosest(points1, k1);
-        System.out.println("K Closest Points for [[1,3],[-2,2]], k=1:");
-        for (int[] point : result1) {
-            System.out.println("[" + point[0] + ", " + point[1] + "]");
-        }
-
-        // Test Case 2
-        int[][] points2 = { { 3, 3 }, { 5, -1 }, { -2, 4 } };
-        int k2 = 2;
-        int[][] result2 = solution.kClosest(points2, k2);
-        System.out.println("\nK Closest Points for [[3,3],[5,-1],[-2,4]], k=2:");
-        for (int[] point : result2) {
-            System.out.println("[" + point[0] + ", " + point[1] + "]");
-        }
-    }
 }
 /**
  * Approach:

@@ -46,51 +46,6 @@ public class binary_tree_left_side_view {
         solve(root.right, level + 1, res);
     }
 
-    public static void main(String[] args) {
-        binary_tree_left_side_view tree = new binary_tree_left_side_view();
-
-        // Test Case 1
-        // Constructing the following tree:
-        // 1
-        // / \
-        // 2 3
-        // /
-        // 4
-        // \
-        // 5
-        // Expected Left View: 1, 2, 4, 5
-        Node root = new Node(1);
-        root.left = new Node(2);
-        root.right = new Node(3);
-        root.right.left = new Node(4);
-        root.right.left.right = new Node(5);
-
-        System.out.println("Test Case 1:");
-        ArrayList<Integer> result = tree.leftView(root);
-        System.out.println("Left view of the binary tree is: " + result);
-        // Output should be [1, 2, 4, 5]
-
-        // Test Case 2
-        // Constructing the following tree:
-        // 10
-        // / \
-        // 20 30
-        // / \
-        // 40 60
-        // Expected Left View: 10, 20, 40
-        Node root2 = new Node(10);
-        root2.left = new Node(20);
-        root2.right = new Node(30);
-        root2.left.left = new Node(40);
-        root2.left.right = new Node(60);
-
-        System.out.println("\nTest Case 2:");
-        ArrayList<Integer> result2 = tree.leftView(root2);
-        System.out.println("Left view of the binary tree is: " + result2);
-        // Output should be [10, 20, 40]
-
-        System.out.println("\n✅ All test cases completed!");
-    }
 }
 
 /*

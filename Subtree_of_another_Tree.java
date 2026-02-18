@@ -60,40 +60,6 @@ public class Subtree_of_another_Tree {
         return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 
-    public static void main(String[] args) {
-        Subtree_of_another_Tree solution = new Subtree_of_another_Tree();
-
-        // Test Case 1: root = [3,4,5,1,2], subRoot = [4,1,2]
-        // Constructing root tree
-        TreeNode root1 = new TreeNode(3);
-        root1.left = new TreeNode(4);
-        root1.right = new TreeNode(5);
-        root1.left.left = new TreeNode(1);
-        root1.left.right = new TreeNode(2);
-
-        // Constructing subRoot tree
-        TreeNode subRoot1 = new TreeNode(4);
-        subRoot1.left = new TreeNode(1);
-        subRoot1.right = new TreeNode(2);
-
-        System.out.println("Test Case 1: " + solution.isSubtree(root1, subRoot1)); // Expected: true
-
-        // Test Case 2: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
-        // This is the case where the values match but structure is different (extra
-        // node 0)
-        TreeNode root2 = new TreeNode(3);
-        root2.left = new TreeNode(4);
-        root2.right = new TreeNode(5);
-        root2.left.left = new TreeNode(1);
-        root2.left.right = new TreeNode(2);
-        root2.left.right.left = new TreeNode(0); // The extra node
-
-        TreeNode subRoot2 = new TreeNode(4);
-        subRoot2.left = new TreeNode(1);
-        subRoot2.right = new TreeNode(2);
-
-        System.out.println("Test Case 2: " + solution.isSubtree(root2, subRoot2)); // Expected: false
-    }
 }
 
 /*

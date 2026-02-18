@@ -58,54 +58,55 @@ public class Count_Good_nodes_in_Binary_Tree {
         return count;
     }
 
-    public static void main(String[] args) {
-        Count_Good_nodes_in_Binary_Tree solver = new Count_Good_nodes_in_Binary_Tree();
-
-        // Test Case 1: [3,1,4,3,null,1,5]
-        // 3
-        // / \
-        // 1 4
-        // / / \
-        // 3 1 5
-        // Good nodes: 3 (root), 4 (4>=3), 3 (3>=3, left child of 1? Wait, path is
-        // 3->1->3. 3>=1 and 3>=3. Yes), 5 (5>=4>=3).
-        // Let's trace carefully:
-        // Path 3: Good (Root) -> max=3
-        // Path 3->1: Not Good (1 < 3) -> max=3
-        // Path 3->1->3: Good (3 >= 3) -> max=3
-        // Path 3->4: Good (4 >= 3) -> max=4
-        // Path 3->4->1: Not Good (1 < 4) -> max=4
-        // Path 3->4->5: Good (5 >= 4) -> max=5
-        // Total: 4 good nodes.
-        TreeNode root1 = new TreeNode(3);
-        root1.left = new TreeNode(1);
-        root1.right = new TreeNode(4);
-        root1.left.left = new TreeNode(3);
-        root1.right.left = new TreeNode(1);
-        root1.right.right = new TreeNode(5);
-
-        System.out.println("Test Case 1: " + solver.goodNodes(root1)); // Expected: 4
-
-        // Test Case 2: [3,3,null,4,2]
-        // 3
-        // /
-        // 3
-        // / \
-        // 4 2
-        // Path 3: Good. Max=3.
-        // Path 3->3: Good (3>=3). Max=3.
-        // Path 3->3->4: Good (4>=3). Max=4.
-        // Path 3->3->2: Not Good (2<3). Max=3.
-        // Total: 3 good nodes.
-        TreeNode root2 = new TreeNode(3);
-        root2.left = new TreeNode(3);
-        root2.left.left = new TreeNode(4);
-        root2.left.right = new TreeNode(2);
-
-        System.out.println("Test Case 2: " + solver.goodNodes(root2)); // Expected: 3
-
-        // Test Case 3: [1]
-        TreeNode root3 = new TreeNode(1);
-        System.out.println("Test Case 3: " + solver.goodNodes(root3)); // Expected: 1
-    }
 }
+
+/*
+ * ==================== APPROACH ====================
+ *
+ * Problem: LeetCode 1448 - Count Good Nodes in Binary Tree
+ * ---------------------------------------------------------
+ * A node X in the tree is "good" if in the path from root to X,
+ * there are NO nodes with a value GREATER than X.
+ * Return the number of good nodes in the binary tree.
+ *
+ * Approach: DFS (Pre-order Traversal) with Max Tracking
+ *
+ * Intuition:
+ * - As we traverse from the root to any node, we need to know the
+ * maximum value seen so far along that path.
+ * - If the current node's value >= max value on the path, it is a "good" node.
+ * - We pass this max value down to child nodes during DFS.
+ *
+ * Algorithm:
+ * 1. Start DFS from the root with maxVal = Integer.MIN_VALUE.
+ * 2. At each node:
+ * - If node.val >= maxVal → it's a good node, count = 1.
+ * - Update maxVal = max(maxVal, node.val) for children.
+ * 3. Recurse on left and right subtrees, passing the updated maxVal.
+ * 4. Return count (current) + count (left) + count (right).
+ *
+ * Dry Run:
+ * 3
+ * / \
+ * 1 4
+ * / / \
+ * 3 1 5
+ *
+ * - Node 3 (root): maxVal = MIN → 3 >= MIN → good ✓, maxVal = 3
+ * - Node 1: maxVal = 3 → 1 < 3 → not good ✗
+ * - Node 3 (leaf): maxVal = 3 → 3 >= 3 → good ✓
+ * - Node 4: maxVal = 3 → 4 >= 3 → good ✓, maxVal = 4
+ * - Node 1: maxVal = 4 → 1 < 4 → not good ✗
+ * - Node 5: maxVal = 4 → 5 >= 4 → good ✓
+ * Total good nodes = 4 ✓
+ *
+ * Time Complexity: O(N) — We visit every node exactly once.
+ * Space Complexity: O(H) — Recursion stack depth, where H is the
+ * height of the tree. O(log N) for balanced, O(N) for skewed.
+ *
+ * Key Insight:
+ * - By passing maxVal as a parameter, each recursive call maintains
+ * its own path context. This avoids any need for backtracking or
+ * global state — the value naturally "resets" when the call returns.
+ * =================================================
+ */

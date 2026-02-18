@@ -37,23 +37,6 @@ public class Count_distinct_substring {
         return count;
     }
 
-    public static void main(String[] args) {
-        // Test Case 1
-        String s1 = "ab";
-        System.out.println("String: " + s1);
-        System.out.println("Distinct Substrings: " + countSubs(s1)); // Expected: 3 ("a", "ab", "b")
-
-        // Test Case 2
-        String s2 = "aa";
-        System.out.println("String: " + s2);
-        System.out.println("Distinct Substrings: " + countSubs(s2)); // Expected: 2 ("a", "aa")
-
-        // Test Case 3
-        String s3 = "abab";
-        System.out.println("String: " + s3);
-        System.out.println("Distinct Substrings: " + countSubs(s3)); // Expected: 7 ("a", "ab", "aba", "abab", "b",
-                                                                     // "ba", "bab")
-    }
 }
 
 /**

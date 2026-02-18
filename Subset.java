@@ -31,19 +31,6 @@ public class Subset {
         }
     }
 
-    public static void main(String[] args) {
-        Subset solution = new Subset();
-
-        // Test case 1
-        int[] nums1 = { 1, 2, 3 };
-        System.out.println("Input: [1, 2, 3]");
-        System.out.println("Output: " + solution.subsets(nums1));
-
-        // Test case 2
-        int[] nums2 = { 0 };
-        System.out.println("Input: [0]");
-        System.out.println("Output: " + solution.subsets(nums2));
-    }
 }
 
 /*

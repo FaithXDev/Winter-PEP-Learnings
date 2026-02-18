@@ -39,60 +39,7 @@ public class Daily_Temperatures {
         return result;
     }
 
-    public static void main(String[] args) {
-        Daily_Temperatures solver = new Daily_Temperatures();
 
-        // Test Case 1
-        int[] temps1 = { 73, 74, 75, 71, 69, 72, 76, 73 };
-        int[] result1 = solver.dailyTemperatures(temps1);
-        System.out.println("Test Case 1:");
-        printArray(temps1);
-        System.out.print("Result: ");
-        printArray(result1);
-        System.out.println("Expected: [1, 1, 4, 2, 1, 1, 0, 0]");
-        System.out.println();
-
-        // Test Case 2
-        int[] temps2 = { 30, 40, 50, 60 };
-        int[] result2 = solver.dailyTemperatures(temps2);
-        System.out.println("Test Case 2:");
-        printArray(temps2);
-        System.out.print("Result: ");
-        printArray(result2);
-        System.out.println("Expected: [1, 1, 1, 0]");
-        System.out.println();
-
-        // Test Case 3
-        int[] temps3 = { 30, 60, 90 };
-        int[] result3 = solver.dailyTemperatures(temps3);
-        System.out.println("Test Case 3:");
-        printArray(temps3);
-        System.out.print("Result: ");
-        printArray(result3);
-        System.out.println("Expected: [1, 1, 0]");
-        System.out.println();
-
-        // Test Case 4
-        int[] temps4 = { 89, 62, 70, 58, 47, 47, 46, 76, 100, 70 };
-        int[] result4 = solver.dailyTemperatures(temps4);
-        System.out.println("Test Case 4:");
-        printArray(temps4);
-        System.out.print("Result: ");
-        printArray(result4);
-        System.out.println("Expected: [8, 1, 5, 4, 3, 2, 1, 1, 0, 0]");
-        System.out.println();
-    }
-
-    private static void printArray(int[] arr) {
-        System.out.print("[");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-            if (i < arr.length - 1) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println("]");
-    }
 }
 
 /*

@@ -22,28 +22,6 @@ public class Majority_Element {
         return candidate;
     }
 
-    public static void main(String[] args) {
-        // Test Case 1: Simple case
-        int[] nums1 = { 3, 2, 3 };
-        System.out.println("Test Case 1: Input: [3, 2, 3]");
-        System.out.println("Majority Element: " + majorityElement(nums1));
-        // Expected: 3
-        System.out.println();
-
-        // Test Case 2: Array with more elements
-        int[] nums2 = { 2, 2, 1, 1, 1, 2, 2 };
-        System.out.println("Test Case 2: Input: [2, 2, 1, 1, 1, 2, 2]");
-        System.out.println("Majority Element: " + majorityElement(nums2));
-        // Expected: 2
-        System.out.println();
-
-        // Test Case 3: Single element
-        int[] nums3 = { 5 };
-        System.out.println("Test Case 3: Input: [5]");
-        System.out.println("Majority Element: " + majorityElement(nums3));
-        // Expected: 5
-        System.out.println();
-    }
 }
 
 /*

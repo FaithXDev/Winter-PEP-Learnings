@@ -20,31 +20,6 @@ public class Remove_Element {
         return temp;
     }
 
-    public static void main(String[] args) {
-        Remove_Element solution = new Remove_Element();
-
-        // Test case 1
-        int[] nums1 = { 3, 2, 2, 3 };
-        int val1 = 3;
-        int len1 = solution.removeElement(nums1, val1);
-        System.out.println("Input: " + Arrays.toString(new int[] { 3, 2, 2, 3 }) + ", val = " + val1);
-        System.out.print("Output: " + len1 + ", nums = [");
-        for (int i = 0; i < len1; i++) {
-            System.out.print(nums1[i] + (i < len1 - 1 ? "," : ""));
-        }
-        System.out.println("]");
-
-        // Test case 2
-        int[] nums2 = { 0, 1, 2, 2, 3, 0, 4, 2 };
-        int val2 = 2;
-        int len2 = solution.removeElement(nums2, val2);
-        System.out.println("Input: " + Arrays.toString(new int[] { 0, 1, 2, 2, 3, 0, 4, 2 }) + ", val = " + val2);
-        System.out.print("Output: " + len2 + ", nums = [");
-        for (int i = 0; i < len2; i++) {
-            System.out.print(nums2[i] + (i < len2 - 1 ? "," : ""));
-        }
-        System.out.println("]");
-    }
 }
 
 /*

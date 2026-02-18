@@ -46,30 +46,6 @@ public class capacity_to_ship_packages_within_d_day {
         return daysUsed <= days;
     }
 
-    public static void main(String[] args) {
-        capacity_to_ship_packages_within_d_day solution = new capacity_to_ship_packages_within_d_day();
-
-        // Test Case 1
-        int[] weights1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        int days1 = 5;
-        System.out.println("Test Case 1:");
-        System.out.println("Expected: 15, Actual: " + solution.shipWithinDays(weights1, days1));
-        System.out.println();
-
-        // Test Case 2
-        int[] weights2 = { 3, 2, 2, 4, 1, 4 };
-        int days2 = 3;
-        System.out.println("Test Case 2:");
-        System.out.println("Expected: 6, Actual: " + solution.shipWithinDays(weights2, days2));
-        System.out.println();
-
-        // Test Case 3
-        int[] weights3 = { 1, 2, 3, 1, 1 };
-        int days3 = 4;
-        System.out.println("Test Case 3:");
-        System.out.println("Expected: 3, Actual: " + solution.shipWithinDays(weights3, days3));
-        System.out.println();
-    }
 }
 
 /*

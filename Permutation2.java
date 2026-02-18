@@ -51,19 +51,6 @@ public class Permutation2 {
         }
     }
 
-    public static void main(String[] args) {
-        Permutation2 solution = new Permutation2();
-
-        // Test case 1
-        int[] nums1 = { 1, 1, 2 };
-        System.out.println("Input: [1, 1, 2]");
-        System.out.println("Output: " + solution.permuteUnique(nums1));
-
-        // Test case 2
-        int[] nums2 = { 1, 2, 3 };
-        System.out.println("Input: [1, 2, 3]");
-        System.out.println("Output: " + solution.permuteUnique(nums2));
-    }
 }
 
 /*

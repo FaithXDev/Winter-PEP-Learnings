@@ -33,17 +33,6 @@ public class Generate_parentheses {
         }
     }
 
-    public static void main(String[] args) {
-        Generate_parentheses solution = new Generate_parentheses();
-
-        int n1 = 3;
-        System.out.println("Input: n = " + n1);
-        System.out.println("Output: " + solution.generateParenthesis(n1));
-
-        int n2 = 1;
-        System.out.println("Input: n = " + n2);
-        System.out.println("Output: " + solution.generateParenthesis(n2));
-    }
 }
 
 /*

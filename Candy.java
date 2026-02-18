@@ -36,22 +36,6 @@ class Candy {
         return totalCandies;
     }
 
-    // Main method for testing
-    public static void main(String[] args) {
-        Candy solution = new Candy();
-
-        // Test Case 1: ratings = [1, 0, 2] -> Output: 5
-        int[] ratings1 = { 1, 0, 2 };
-        System.out.println("Test 1: " + solution.candy(ratings1)); // Expected: 5
-
-        // Test Case 2: ratings = [1, 2, 2] -> Output: 4
-        int[] ratings2 = { 1, 2, 2 };
-        System.out.println("Test 2: " + solution.candy(ratings2)); // Expected: 4
-
-        // Test Case 3: ratings = [1, 3, 2, 2, 1] -> Output: 7
-        int[] ratings3 = { 1, 3, 2, 2, 1 };
-        System.out.println("Test 3: " + solution.candy(ratings3)); // Expected: 7
-    }
 }
 
 // ==================== APPROACH ====================
