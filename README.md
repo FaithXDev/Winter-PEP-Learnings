@@ -101,7 +101,8 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Maximize Sum Of Array After K Negations](Maximize_Sum_Of_Array_After_K_Negations.java)
 - [House Robber](House_Robber.java)
 - [N-th Tribonacci Number](N_th_Tribonacci_Number.java)
-
+- [House Robber II](House_Robber_II.java)
+- [Unique Paths](Unique_Paths.java)
 
 
 ## 📝 Contributions
