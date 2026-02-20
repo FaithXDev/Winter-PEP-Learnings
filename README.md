@@ -103,6 +103,8 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [N-th Tribonacci Number](N_th_Tribonacci_Number.java)
 - [House Robber II](House_Robber_II.java)
 - [Unique Paths](Unique_Paths.java)
+- [Edit Distance](Edit_Distance.java)
+- [Longest Common Subsequence](Longest_Common_Subsequence.java)
 
 
 ## 📝 Contributions
