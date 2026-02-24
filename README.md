@@ -108,6 +108,9 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Minimum Insertion Steps to Make a String Palindrome](Minimum_Insertion_Steps_to_Make_a_String_Palindrome.java)
 - [Coin Change](Coin_Change.java)
 - [Decode Ways](decode_ways.java)
+- [Longest Palindromic Subsequence](Longest_Palindromic_Subsequence.java)
+- [Number of Provinces](Number_of_Provinces.java)
+
 
 ## 📝 Contributions
 
