@@ -110,6 +110,11 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Decode Ways](decode_ways.java)
 - [Longest Palindromic Subsequence](Longest_Palindromic_Subsequence.java)
 - [Number of Provinces](Number_of_Provinces.java)
+- [Trapping Rain Water](Trapping_Rain_Water.java)
+- [Number of Dice Rolls With Target Sum](Number_of_Dice_Rolls_With_Target_Sum.java)
+- [Find Words That Can Be Formed by Characters](Find_Words_That_Can_Be_Formed_by_Characters.java)
+- [Course Schedule](Course_Schedule_207.java)
+- [Course Schedule II](Course_Schedule_II_210.java)
 
 
 ## 📝 Contributions
