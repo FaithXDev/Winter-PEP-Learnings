@@ -115,6 +115,7 @@ You can run any solution file individually using a Java compiler or an IDE (like
 - [Find Words That Can Be Formed by Characters](Find_Words_That_Can_Be_Formed_by_Characters.java)
 - [Course Schedule](Course_Schedule_207.java)
 - [Course Schedule II](Course_Schedule_II_210.java)
+- [Pascal's Triangle](Pascals_Triangle_118.java)
 
 
 ## 📝 Contributions
